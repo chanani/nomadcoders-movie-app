@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nomadcoders-movie-app/static/css/main.0757f26c.css",
+    "main.js": "/nomadcoders-movie-app/static/js/main.f0a55dc3.js",
+    "index.html": "/nomadcoders-movie-app/index.html",
+    "main.0757f26c.css.map": "/nomadcoders-movie-app/static/css/main.0757f26c.css.map",
+    "main.f0a55dc3.js.map": "/nomadcoders-movie-app/static/js/main.f0a55dc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0757f26c.css",
+    "static/js/main.f0a55dc3.js"
+  ]
+}
