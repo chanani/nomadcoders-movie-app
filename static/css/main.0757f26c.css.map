@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.0757f26c.css","mappings":"AAAA,mBAEE,uBAAwB,CADxB,UAEF,CCHA,kBACE,yCAA8C,CAC9C,cACF","sources":["Button.module.css","App.module.css"],"sourcesContent":[".btn {\n  color : white;\n  background-color: tomato;\n}",".title {\n  font-family: 'Courier New', Courier, monospace;\n  font-size: 18px;\n}"],"names":[],"sourceRoot":""}
