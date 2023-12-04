@@ -1,0 +1,109 @@
+.container {
+  margin-bottom: 20px;
+  margin: 0 auto;
+  display: block;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+
+}
+
+@media (max-width : 1170px) {
+  .container {
+    width: 33.3%;
+  }
+}
+
+@media (max-width : 880px) {
+  .container {
+    width: 50%;
+
+  }
+}
+@media (max-width : 600px) {
+  .container {
+    width: 100%;
+
+  }
+}
+
+.wrap {
+  margin: 30px;
+  width: 230px;
+}
+
+.movie_title {
+  font-size: 25px;
+  color: #000;
+  margin-top: 10px;
+  text-align: center;
+}
+.img_box{
+  position: relative;
+}
+
+.movies_img {
+  box-shadow: 0 10px 38px rgba(0,0,0,0.20), 0 15px 12px rgba(0,0,0,0.10);
+  border-radius: 20px;
+}
+
+.movie_year{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #cfcfcf;
+  background-color: rgb(102 238 79 / 37%);
+  border-radius: 10px;
+  border: 1px solid #777;
+  width: 50px;
+  text-align: center;
+  
+}
+
+.movie_rank {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  color: white;
+  border: 1px solid #777;
+  font-size: 16px;
+  font-weight: 600;
+  width: 20px;
+  text-align: center;
+  background-color: #a04db6d4;
+  height: 20px;
+  line-height: 23px;
+  border-radius: 8px;
+}
+
+.info_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+.date_box, .runtime_box {
+  overflow: hidden;
+}
+
+.date_box svg, .date_box p {
+  float: left;
+}
+.date_box p, .runtime_box p {
+  margin-left: 5px;
+
+}
+.runtime_box svg, .runtime_box p {
+  float: right;
+}
+
+.info_box {
+  font-size: 20px;
+}
+

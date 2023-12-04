@@ -1,3 +1,5 @@
+import LoadingPage from "../components/Loading";
+
 function DetailPage({id, img, title, genres, runtime}){
   return (
     <div>

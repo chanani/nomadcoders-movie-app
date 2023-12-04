@@ -4,8 +4,8 @@ import Detail from "./routes/Detail";
 
 function App() {
   return (
-      <BrowserRouter>
-        <Routes basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes >
           <Route path="/movie/:id" element={<Detail />} />
           <Route path="/" element={<Home />} />
         </Routes>
