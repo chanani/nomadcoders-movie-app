@@ -9,6 +9,10 @@
   padding-top: 60px;
 }
 
+.title_img {
+  height: 70px;
+  position: absolute;
+}
 
 @media(min-width : 500px){
   .wrap{
@@ -17,6 +21,11 @@
   .search_select_box button{
     font-size: 20px;
   }
+  .title_img {
+    top: 15px;
+    left: 10vw;
+  }
+ 
 }
 
 @media(max-width : 500px){
@@ -26,16 +35,20 @@
   .search_select_box button{
     font-size: 15px;
   }
+  .title_img {
+    top: 15px;
+    left: 1px;
+  }
 }
 
 .title_box { 
   margin: 0 auto;
-  border: 1px solid #777;
   height: 100px;
   line-height: 3.2;
   background-color: #25252b;
   color: white;
   text-align: center;
+  position: relative;
 }
 
 .container {

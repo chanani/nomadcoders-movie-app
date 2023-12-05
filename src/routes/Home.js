@@ -3,6 +3,7 @@ import Movie from "../components/Movie";
 import LoadingPage from "../components/Loading";
 import style from "../css/Home.module.css";
 import { isDisabled } from "@testing-library/user-event/dist/utils";
+import titleImg from "../image/title_img.png"
 // API : https://yts.mx/api/v2/list_movies.json?minimum_rating=8.8&sort_by=year
 
 function Home() {
@@ -80,6 +81,7 @@ function Home() {
   return (
     <div className={style.container}>
       <div className={style.title_box}>
+      <img src={titleImg} alt="title" className={style.title_img}/>
         <h1 className={style.title}>React Movie List</h1>
       </div>
 
