@@ -4,12 +4,12 @@
   text-decoration : none;
 }
 .container {
-  height: auto;
+  min-height: 1000px;
 }
 .Loading_box{
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
+  padding-top:742px;
 }
 .title_box {
   position: relative;
