@@ -3,15 +3,36 @@
   list-style :none;
   text-decoration : none;
 }
+.container {
+  height: auto;
+}
 .Loading_box{
   margin: 0 auto;
   text-align: center;
   padding-top: 60px;
 }
-
+.title_box {
+  position: relative;
+}
 .title_img {
   height: 70px;
   position: absolute;
+}
+
+.mode {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mode p svg {
+  height: 30px;
+  width: 30px;
+}
+
+.on_container {
+  background-color: #1b1d25;
+  color: white;
 }
 
 @media(min-width : 500px){
@@ -25,6 +46,11 @@
     top: 15px;
     left: 10vw;
   }
+
+  .mode {
+    top: 35px;
+    right: 10vw;
+  }
  
 }
 
@@ -37,7 +63,12 @@
   }
   .title_img {
     top: 15px;
-    left: 1px;
+    left: 1vw;
+  }
+
+  .mode {
+    top: 35px;
+    right: 7vw;
   }
 }
 
@@ -50,3 +81,4 @@
   text-align: center;
   position: relative;
 }
+

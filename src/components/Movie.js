@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import style from "../css/Movie.module.css";
 
-function Movie({rank, index, id, coverImg, title, date, runtime, rating, year }) {
+function Movie({rank, index, id, coverImg, title, date, runtime, rating, year, mode }) {
   return (
     <div className={style.container}>
       <div className={style.wrap}>
         <div className={style.img_box}>
           <Link to={`/movie/${id}`} className="movie_link">
             <img src={coverImg} alt={title} className={style.movies_img} />
-            <p className={style.movie_title}>
+            <p className={`${style.movie_title} ${mode ? style.on_title : ""}`}>
               {title.length > 17 ? `${title.slice(0, 17)}...` : title}
             </p>
             <span className={style.movie_year}>{year}</span>

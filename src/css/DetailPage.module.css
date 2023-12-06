@@ -92,10 +92,97 @@
 }
 
 
+/* Information Box */
+.information_box{
+  padding: 30px;
+  margin: 0 auto;
+}
+/* 너비 반응형 */
+.summary_box {
+  width: 1294px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.summary_title_box{
+  border: 1px solid #000;
+  border-radius: 5px 5px 0 0;
+  padding: 16px 20px; 
+  background-color: #E7F1FF;
+  color: #0C63E4;
+}
+
+.summary_title_box p {
+  font-size: 26px;
+}
+
+.summary_content_box{
+  border: 1px solid #000;  
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+  padding: 16px 20px; 
+}
+
+.date_and_run {
+  width: 1290px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+}
+
+.date_box, .runtime_box {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
-@media (max-width : 576px) {
+.date_box p,
+.runtime_box p,
+.runtime_box svg {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.backPage {
+  float: right;
+}
+.date_box p, .runtime_box p{
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.back_btn {
+  height: 50px;
+  width: 65px;
+  background-color: #808095;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.back_btn:hover{
+  background-color: #a3bfe7;
+  color: #000;
+}
+
+.on_summary_title_box{
+  background-color: #031633;
+  color: #6ea8fe;
+  border-color: #464c53;
+}
+
+.on_summary_content_box {
+  border-color: #464c53;
+
+}
+
+
+@media (max-width : 576px) { /* mobile */
+  
   .background_img{
     background-size: 100% 100%;
   }
@@ -108,17 +195,17 @@
   .title {
     text-align: center;
     width: 100vw;
-    margin-top: 50px;
+    margin-top:70px;
   }
 
   .movie_year_box{
     text-align: center;
     width: 100vw;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .movie_genres_box {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 0;
   }
 
@@ -128,12 +215,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .movie_genres_box{
     justify-content: center;
     
+  }
+
+  .background_img{
+    height: 580px;
+  }
+  .background_color {
+    height: 580px;
+  }
+
+  .summary_box {
+    width: 95vw;
+    margin-bottom: 10px;
+  }
+  .information_box {
+    padding: 10px 0 10px 0;
+  }
+  .date_and_run {
+    width: 95vw;
   }
 }
 
@@ -145,7 +250,12 @@
   .movie_info_box {
     width: 480px; /* -60 */
   }
-  
+  .summary_box {
+    width: 466px;
+  }
+  .date_and_run {
+    width: 466px;
+  }
 }
 
 @media (min-width : 768px) {
@@ -154,6 +264,12 @@
   }
   .movie_info_box {
     width: 660px; /* -60 */
+  }
+  .summary_box {
+    width: 658px;
+  }
+  .date_and_run {
+    width: 658px;
   }
 }
 
@@ -164,6 +280,12 @@
   .movie_info_box {
     width: 900px; /* -60 */
   }
+  .summary_box {
+    width: 882px;
+  }
+  .date_and_run {
+    width: 882px;
+  }
 }
 
 @media (min-width : 1200px) {
@@ -173,6 +295,12 @@
   .movie_info_box {
     width: 1080px; /* -60 */
   }
+  .summary_box {
+    width: 1090px;
+  }
+  .date_and_run {
+    width: 1090px;
+  }
 }
 
 @media (min-width : 1400px) {
@@ -181,6 +309,14 @@
   }
   .movie_info_box {
     width: 1260px; /* -60 */
+  }
+
+  .summary_box {
+    width: 1290px;
+  }
+
+  .date_and_run {
+    width: 1290px;
   }
 
 }
