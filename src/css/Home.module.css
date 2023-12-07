@@ -104,14 +104,12 @@
   width: 200px; 
   height: 65%;
   border-radius: 10px 0 0 10px;
-  font-size: 18px;
   padding-left: 10px;
 }
 .search_input_box .reset_btn {
-  width: 80px; 
+  width: 60px; 
   height: 65%;
-  border-radius: 0 10px 10px 0;
-  font-size: 18px;
+  border-radius: 0 10px 10px 0;  
   background-color: gray;
   color: white;
   border: none;
@@ -148,6 +146,37 @@
   color: white;
 }
 
+/* rank box */
+
+
+.middle_box {
+  height: 50px;
+  overflow: hidden;
+  padding: 10px 10px 0 10px;
+}
+
+.rank_box {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.rank_box input{
+  height: 30px;
+  width: 66px;
+  line-height: 10;
+}
+
+.rank_box label {
+  font-size: 23px;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
 /* rank check_box */
 
 .check_input{
@@ -177,7 +206,7 @@
 }
 .check_input:checked::before{
   background-color: white;
-  left: 3.7em; /* 눌렀을 때 이동하는 원의 길이 */
+  left: 2.7em; /* 눌렀을 때 이동하는 원의 길이 */
 }
 
 .check_input:disabled{
@@ -208,33 +237,5 @@ label {
   cursor: pointer;
 }
 
-/*  */
-
-.middle_box {
-  height: 50px;
-  overflow: hidden;
-  padding: 10px 10px 0 10px;
-}
-
-.rank_box {
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-
-.rank_box input{
-  height: 30px;
-  width: 80px;
-  line-height: 10;
-}
-
-.rank_box label {
-  font-size: 23px;
-  margin-left: 10px;
-  margin-top: 6px;
-}
 
 

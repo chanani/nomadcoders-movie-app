@@ -35,12 +35,12 @@ function Home() {
       getMovies();
     }
   };
-  console.log(mode);
+  
   const onSearchChange = (event) => {
-    const searchSpace = event.target.value.replaceAll(" ", "").toLowerCase();
+    const searchSpace = event.target.value.toLowerCase();
     setSearch(searchSpace); // movies 배열에서 검색어와 일치하는 영화만 필터링
     const filtered = movies.filter((movie) =>
-      movie.title.toLowerCase().replaceAll(" ", "").includes(searchSpace)
+      movie.title.toLowerCase().replaceAll(" ", "").includes(searchSpace.replaceAll(" ", ""))
     );
     setFilteredMovies(filtered);
   };
